@@ -1,0 +1,38 @@
+.advantages {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    align-items: start;
+  }
+  &__content {
+    width: 32%;
+    position: sticky;
+    top: 150px;
+    & h2 {
+      margin-bottom: 14px;
+    }
+    & p {
+      margin-bottom: 20px;
+      &:nth-last-of-type(1) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  //   &__scrolling {
+  //     border: 1px solid $--primary;
+  //   }
+  &__scrolling_item {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid $--primary;
+    position: sticky;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out 0s;
+    &:not(:first-of-type) {
+      margin-top: -10px;
+    }
+  }
+}

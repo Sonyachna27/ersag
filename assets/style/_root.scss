@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+
+$--primary: #87bd39;
+$--secondary: #eaf3ff;
+$--white: #fff;
+$--green: #73af1c;
+$--black: #383838;
+$--green-light: #c4dbc3;
+$--black-light: #4f4f4f;
+
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  color: $--black;
+  background-color: #f9f9f9;
+}
+.container {
+  max-width: 1330px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-s {
+  max-width: 1215px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+  }
+  & span {
+    font: inherit;
+    padding: 4px 15px;
+    background-color: $--primary;
+    color: $--white;
+    border-radius: 0px 500px 500px 0px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+  }
+  & span {
+    font: inherit;
+    padding: 4px 15px;
+    background-color: $--primary;
+    color: $--white;
+    border-radius: 0px 500px 500px 0px;
+  }
+}
+h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.btn {
+  display: flex;
+  padding: 14px;
+  border: 1px solid transparent;
+  background-color: $--primary;
+  align-items: center;
+  justify-content: center;
+  color: $--white;
+  max-width: 325px;
+  width: 100%;
+  border-radius: 500px;
+  text-align: center;
+  transition: 0.3s linear;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $--secondary;
+    color: $--black;
+    border-color: $--black;
+  }
+}
+.mb-m {
+  margin-bottom: 120px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.title-center {
+  text-align: center;
+}
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
