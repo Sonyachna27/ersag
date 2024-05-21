@@ -20,9 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else if (windowInnerWidth <= 1023 && stikyElement) {
       console.log(heightAdvantagesContent);
       stikyElement.forEach((stiky, index) => {
-        stiky.style.top = `calc(${heightAdvantagesContent}px + 50px + ${
-          50 * index
-        }px)`;
+        stiky.style.top = `calc(50px + ${50 * index}px)`;
       });
     }
   };
