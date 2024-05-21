@@ -550,6 +550,7 @@ h3 {
   width: 65%;
   position: sticky;
   top: 150px;
+  height: 100%;
 }
 @media screen and (max-width: 1023px) {
   .advantages__content {
