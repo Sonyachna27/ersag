@@ -1,4 +1,7 @@
 .about {
+  & h2 {
+    margin-bottom: 40px;
+  }
   &__container {
     display: flex;
     gap: 10px;

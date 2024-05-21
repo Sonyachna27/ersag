@@ -16,6 +16,7 @@
 
 $--primary: #87bd39;
 $--secondary: #eaf3ff;
+$--light-green: #e9ffe8;
 $--white: #fff;
 $--green: #73af1c;
 $--black: #383838;
@@ -30,10 +31,10 @@ body {
   background-color: #f9f9f9;
 }
 .container {
-  max-width: 1330px;
+  max-width: 1340px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 .container-s {
   max-width: 1215px;
@@ -54,6 +55,7 @@ h1 {
   & span {
     font: inherit;
     padding: 4px 15px;
+    margin-left: 3px;
     background-color: $--primary;
     color: $--white;
     border-radius: 0px 500px 500px 0px;
@@ -66,13 +68,13 @@ h2 {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 40px;
   @media screen and (max-width: 767px) {
     font-size: 26px;
   }
   & span {
     font: inherit;
     padding: 4px 15px;
+    margin-left: 3px;
     background-color: $--primary;
     color: $--white;
     border-radius: 0px 500px 500px 0px;
@@ -120,6 +122,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  margin-bottom: 40px;
   @media screen and (max-width: 767px) {
     flex-direction: column;
   }
