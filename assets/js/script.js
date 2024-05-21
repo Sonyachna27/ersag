@@ -26,11 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   resizeStikyElement();
   window.addEventListener("resize", resizeStikyElement);
+
+  //  ініціалізація слайдеру для акцій
   const actionSliderInit = document.querySelector(".actionSlider");
   if (actionSliderInit) {
     const sliderAction = new Swiper(".actionSlider", {
       pagination: {
-        el: ".swiper-pagination action__pagination",
+        el: ".swiper-pagination",
         clickable: true,
       },
       navigation: {
@@ -40,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       slidesPerView: 1,
       spaceBetween: 10,
+      watchOverflow: true,
       breakpoints: {
         767: {
           slidesPerView: 2,
