@@ -47,10 +47,10 @@ h1 {
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
   text-transform: uppercase;
+  line-height: 120%;
   @media screen and (max-width: 767px) {
-    font-size: 32px;
+    font-size: 28px;
   }
   & span {
     font: inherit;
@@ -66,11 +66,13 @@ h2 {
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 120%;
   text-transform: uppercase;
   @media screen and (max-width: 767px) {
-    font-size: 26px;
+    font-size: 20px;
+    line-height: auto;
   }
+
   & span {
     font: inherit;
     padding: 4px 15px;
@@ -84,8 +86,74 @@ h3 {
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 120%;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+.text-regular {
+  //1#,
+  font-size: 16px;
+  font-weight: 400;
+  line-height: auto;
+}
+.text-regular-height {
+  // 2#,
+  font-size: 16px;
+  font-weight: 400;
+  line-height: auto;
+}
+.text-regular-s {
+  //5#,
+  font-size: 14px;
+  font-weight: 400;
+  line-height: auto;
+}
+.text-regular-s-height {
+  //6#,
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.text-regular-xs {
+  //8
+  font-size: 12px;
+  font-weight: 400;
+  line-height: auto;
+}
+.text-regular-m {
+  //9#
+  font-size: 20px;
+  font-weight: 400;
+  line-height: auto;
+}
+.text-medium-s {
+  //3#
+  font-size: 16px;
+  font-weight: 500;
+  line-height: auto;
+}
+.text-bold {
+  //4#,
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.text-bold-s {
+  //7#
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
 }
 .btn {
   display: flex;
@@ -113,6 +181,12 @@ h3 {
     margin-bottom: 60px;
   }
 }
+.mb-s {
+  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
 
 .title-center {
   text-align: center;
@@ -125,5 +199,55 @@ h3 {
   margin-bottom: 40px;
   @media screen and (max-width: 767px) {
     flex-direction: column;
+  }
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 30px;
+  max-width: fit-content;
+  width: 100%;
+  background-color: $--white;
+  border: 1px solid $--primary;
+  border-radius: 500px;
+  position: relative;
+  transition: 0.3s linear;
+  &:hover {
+    background-color: $--primary;
+    color: $--white;
+    &:before {
+      background-color: $--black;
+      border-color: $--black;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    white-space: wrap;
+    text-wrap: wrap;
+    word-break: break-all;
+    max-width: 100%;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    background-color: $--primary;
+    border: 1px solid transparent;
+    background-image: url("../images/phone.svg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: -45px;
+    transition: 0.3s linear;
+  }
+}
+.circle-mail {
+  &::before {
+    background-image: url("../images/mail.svg");
+    background-size: 23px;
   }
 }

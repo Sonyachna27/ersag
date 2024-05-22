@@ -43,6 +43,9 @@
     &:not(:first-of-type) {
       margin-top: -10px;
     }
+    @media screen and (max-width: 767px) {
+      padding: 30px 20px;
+    }
   }
 }
 .advantages__scrolling {
@@ -60,6 +63,11 @@
     justify-content: center;
     max-width: fit-content;
     position: relative;
+    @media screen and (max-width: 550px) {
+      max-width: 203px;
+      width: 100%;
+      padding: 10px 20px 10px 40px;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -69,12 +77,21 @@
       height: 10px;
       border-radius: 50%;
       background-color: $--primary;
+      @media screen and (max-width: 767px) {
+        left: 20px;
+      }
     }
   }
   & svg {
     position: absolute;
     top: 0;
     right: 0;
+    max-width: 64px;
+    max-height: 64px;
+    @media screen and (max-width: 767px) {
+      max-width: 32px;
+      max-height: 32px;
+    }
   }
 }
 .advantages__scrolling_item_bottom {
