@@ -14,11 +14,11 @@
   font-weight: 700;
 }
 
-$--primary: #87bd39;
-$--secondary: #eaf3ff;
+$--primary: #8ac900;
+$--secondary: #e9ffe8;
 $--light-green: #e9ffe8;
 $--white: #fff;
-$--green: #73af1c;
+// $--green: #73af1c;
 $--black: #383838;
 $--green-light: #c4dbc3;
 $--black-light: #4f4f4f;
@@ -92,7 +92,7 @@ h3 {
     font-size: 16px;
   }
 }
-h4 {
+.medium-title {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -158,7 +158,7 @@ h4 {
 .btn {
   display: flex;
   padding: 14px;
-  border: 1px solid transparent;
+  border: 0.5px solid transparent;
   background-color: $--primary;
   align-items: center;
   justify-content: center;
@@ -209,7 +209,7 @@ h4 {
   max-width: fit-content;
   width: 100%;
   background-color: $--white;
-  border: 1px solid $--primary;
+  border: 0.5px solid $--primary;
   border-radius: 500px;
   position: relative;
   transition: 0.3s linear;
@@ -235,7 +235,7 @@ h4 {
 
     border-radius: 50%;
     background-color: $--primary;
-    border: 1px solid transparent;
+    border: 0.5px solid transparent;
     background-image: url("../images/phone.svg");
 
     background-position: center;
@@ -249,5 +249,42 @@ h4 {
   &::before {
     background-image: url("../images/mail.svg");
     background-size: 23px;
+  }
+}
+.black-circle {
+  background-color: $--white;
+  border-color: $--black;
+  &:hover {
+    border-color: transparent;
+    &:before {
+      background-color: $--primary;
+      border-color: transparent;
+    }
+  }
+  &:before {
+    background-color: $--black;
+  }
+}
+.contact__wrap {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px 20px 50px;
+}
+.social__wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  & a {
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 50%;
+    & svg {
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
