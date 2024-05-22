@@ -931,6 +931,7 @@ h3 {
   justify-content: flex-start;
   overflow: hidden;
   padding: 30px 0;
+  width: 100%;
   width: 110%;
   background-color: #8ac900;
 }
@@ -948,24 +949,12 @@ h3 {
 .footer__animate span {
   align-items: center;
   animation: move-rtl 6s linear infinite;
-  color: #5870b6;
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 400;
   display: flex;
   white-space: nowrap;
-}
-
-.animate__top img,
-.animate__bottom img,
-.footer__animate img {
-  min-width: 108px;
-  margin-left: 100px;
-}
-
-.footer__animate span {
-  animation: move-rtl 6s linear infinite;
-}
-
-.animate__top span {
-  animation: move-rtl 6s linear infinite;
+  margin-right: 100px;
 }
 
 .animate__bottom span {
@@ -998,16 +987,24 @@ h3 {
   }
 }
 .promo-m {
-  font-size: 56px;
+  font-size: 28px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 120%;
+  line-height: normal;
+  text-transform: uppercase;
 }
 @keyframes move-rtl {
   0% {
     transform: translateX(0);
+    opacity: 1;
   }
-  to {
+  99% {
+    opacity: 0;
     transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
 }
 @keyframes move-rtl-revers {
