@@ -101,7 +101,7 @@
           <div class="header__nav_container">
             <nav>
               <ul>
-                <li><a href="./index.html">Головна</a></li>
+                <li class="current_page_item"><a href="./index.html">Головна</a></li>
                 <li><a href="#">Про компанію</a></li>
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Про продукцію</a></li>
@@ -438,11 +438,11 @@
 				<div class="contact__content">
 					<h2>НАШІ <span>КОНТАКТИ</span></h2>
 					<p class="text-regular">Слідкуйте за нами в соціальних мережах, де ми ділимося спеціальними пропозиціями ERSAG. У цьому розділі ви знайдете всі наші контакти для зв'язку та отримання додаткової інформації.</p>
-					<div class="contact__content_links">
+					<div class="contact__content_links contact__wrap">
 						<a href="tel:+16289461844" class=" circle text-regular-height">+1 628 946 1844</a>
 						<a href="mailto: prishchepo4ka@gmail.com" class="text-regular-height circle circle-mail"> prishchepo4ka@gmail.com</a>
 					</div>
-					<div class="contact__content_social">
+					<div class="contact__content_social social__wrap">
 						<a href="#">
 							<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
 								<circle cx="32" cy="32" r="32" fill="url(#paint0_linear_85_3573)"/>
@@ -491,7 +491,81 @@
 			</div>
 		</div>
 
-<div class="footer__content"></div>
+<div class="footer__content">
+	<div class="container">
+		<div class="footer__container">
+			<a href="./index.html" class="logo">
+				<img src="./assets/images/logo-black.svg" alt="Ersag">
+			</a>
+			<ul class="menu">
+				<li>
+					<div>ПРО НАС</div>
+					<ul class="submenu">
+						<li><a href="#"> Головна </a></li>
+						<li><a href="#"> Про компанію </a></li>
+						<li><a href="#"> Застосування </a></li>
+						<li><a href="#"> Маркетинг </a></li>
+					</ul>
+				</li>
+				<li>
+					<div>ПРОДУКЦІЯ</div>
+					<ul class="submenu">
+						<li><a href="#"> Каталог </a></li>
+						<li><a href="#"> Акції </a></li>
+						<li><a href="#"> Про продукцію </a></li>
+						<li><a href="#"> Купити продукцію </a></li>
+						<li><a href="#"> Оплата і доставка </a></li>
+				</li>
+			</ul>
+		</ul>
+			<div class="footer__contact">
+				<span class="medium-title">контакти</span>
+				<div class="contact__wrap">
+						<a href="tel:+16289461844" class=" circle text-regular-height black-circle">+1 628 946 1844</a>
+							<a href="mailto: prishchepo4ka@gmail.com" class="text-regular-height black-circle circle circle-mail"> prishchepo4ka@gmail.com</a>
+				</div>
+			</div>
+
+			<div class="footer__social">
+				<span class="medium-title">Cлідкуйте за нами</span>
+				<div class="social__wrap">
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+							<circle cx="32" cy="32" r="31.75" fill="white" stroke="#383838" stroke-width="0.5"/>
+							<path d="M33.8414 33.0025H37.9771L38.6265 28.5918H33.8405V26.1811C33.8405 24.3488 34.4108 22.724 36.0434 22.724H38.6668V18.8749C38.2059 18.8096 37.2311 18.6665 35.389 18.6665C31.5426 18.6665 29.2876 20.799 29.2876 25.6575V28.5918H25.3335V33.0025H29.2876V45.1257C30.0706 45.2493 30.8638 45.3332 31.678 45.3332C32.414 45.3332 33.1323 45.2625 33.8414 45.1619V33.0025Z" fill="#383838"/>
+							</svg>
+					</a>
+					<a href="#">
+						<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="32" cy="32" r="31.75" fill="white" stroke="#383838" stroke-width="0.5"/>
+							<path d="M44.1928 20.8502L39.9969 43.0009C39.9969 43.0009 39.4098 44.5366 37.797 43.8001L28.1159 36.0272L28.071 36.0043C29.3787 34.7747 39.5192 25.2273 39.9624 24.7945C40.6484 24.1243 40.2225 23.7253 39.4259 24.2316L24.4472 34.1924L18.6684 32.1564C18.6684 32.1564 17.759 31.8176 17.6715 31.0811C17.5829 30.3433 18.6983 29.9443 18.6983 29.9443L42.2566 20.2667C42.2566 20.2667 44.1928 19.3759 44.1928 20.8502Z" fill="#383838"/>
+							</svg>
+							
+					</a>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+							<circle cx="32" cy="32" r="31.75" fill="white" stroke="#383838" stroke-width="0.5"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M37.3332 21.3332H26.6665C23.721 21.3332 21.3332 23.721 21.3332 26.6665V37.3332C21.3332 40.2786 23.721 42.6665 26.6665 42.6665H37.3332C40.2786 42.6665 42.6665 40.2786 42.6665 37.3332V26.6665C42.6665 23.721 40.2786 21.3332 37.3332 21.3332ZM26.6665 18.6665C22.2482 18.6665 18.6665 22.2482 18.6665 26.6665V37.3332C18.6665 41.7514 22.2482 45.3332 26.6665 45.3332H37.3332C41.7514 45.3332 45.3332 41.7514 45.3332 37.3332V26.6665C45.3332 22.2482 41.7514 18.6665 37.3332 18.6665H26.6665Z" fill="#383838"/>
+							<path d="M38.6688 26.6662C39.4052 26.6662 40.0021 26.0692 40.0021 25.3328C40.0021 24.5965 39.4052 23.9995 38.6688 23.9995C37.9324 23.9995 37.3354 24.5965 37.3354 25.3328C37.3354 26.0692 37.9324 26.6662 38.6688 26.6662Z" fill="#383838"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M38.6668 31.9987C38.6668 35.6806 35.682 38.6654 32.0002 38.6654C28.3183 38.6654 25.3335 35.6806 25.3335 31.9987C25.3335 28.3168 28.3183 25.332 32.0002 25.332C35.682 25.332 38.6668 28.3168 38.6668 31.9987ZM36.0002 31.9987C36.0002 34.2079 34.2094 35.9987 32.0002 35.9987C29.791 35.9987 28.0002 34.2079 28.0002 31.9987C28.0002 29.7895 29.791 27.9987 32.0002 27.9987C34.2094 27.9987 36.0002 29.7895 36.0002 31.9987Z" fill="#383838"/>
+							</svg>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer__info ">
+<p class="text-regular-xs">Вся інформація на даному свйті призначена для ознайомлення з продукцією компанії Ersag і не є пубоічною офертою. Детальна інфо на офіційному сайті: <a href="https://www.ersagglobal.com.ua">https://www.ersagglobal.com.ua</a></p>
+		</div>
+		<div class="footer__copy">
+			<p class="text-regular-xs">©2023 all rights reserved ”ersagglobal”</p>
+		<div class="lumious">
+                        <span>Development by</span>
+                        <img src="./assets/images/lumious.svg" alt="lumious">
+                    </div>
+		</div>
+	</div>
+</div>
 	</footer>
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/script.js"></script>

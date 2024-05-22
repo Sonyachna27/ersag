@@ -62,20 +62,20 @@
       display: block;
       width: 45px;
       height: 45px;
-      border: 1px solid $--primary;
-      background-color: $--primary;
+      border: 0.5px solid $--white;
+      background-color: $--white;
       cursor: pointer;
       position: absolute;
       right: 0;
       top: calc(50% - 22.5px);
-      border-radius: 5%;
+      border-radius: 50%;
 
       .btn-menu-line {
         width: 27px;
         height: 2px;
         position: absolute;
         left: 8px;
-        background-color: $--white;
+        background-color: $--primary;
         transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
       }
 
@@ -161,6 +161,37 @@
         font-size: 25px;
         overflow: hidden;
         overflow-y: auto;
+      }
+      & li {
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          background-color: $--primary;
+          width: 0;
+          height: 1px;
+          left: 0;
+          transition: 0.3s linear;
+        }
+        &:hover {
+          &:after {
+            width: calc(100% + 10px);
+          }
+        }
+      }
+      & .current_page_item {
+        color: $--primary;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          background-color: $--primary;
+          width: calc(100% + 10px);
+          height: 1px;
+          left: 0;
+        }
       }
     }
   }
