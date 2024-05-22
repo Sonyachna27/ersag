@@ -1,16 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const windowInnerWidth = window.innerWidth; // глобальна константа потрібна в декількох функціях
+
   const burgerMenu = document.querySelector(".burgerBtn");
   const content = document.querySelector(".header__nav_container");
   const htmlElement = document.querySelector("html");
+
   burgerMenu.addEventListener("click", () =>
     htmlElement.classList.toggle("open")
   );
+  const navLinks = document.querySelectorAll("nav a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      htmlElement.classList.remove("open");
+    });
+  });
 
-  // фунція для визначення положення елементів з липким позиціонуванням в секції  переваг
+  //функція для фіксації меню
+
+  window.addEventListener("scroll", function () {
+    const documentHeight = Math.max(document.body.scrollHeight);
+    const headerNav = document.querySelector(".header__nav");
+    let lastScrollTop = 0;
+
+    if (windowInnerWidth >= 1024) {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        if (scrollTop > 100) {
+          headerNav.classList.add("fixed-header-nav");
+        }
+      } else if (scrollTop <= 0) {
+        // Скролимо до верху
+        headerNav.classList.remove("fixed-header-nav");
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }
+  });
+
   let heightAdvantagesContent = document.querySelector(
     ".advantages__content"
   ).offsetHeight;
-  const windowInnerWidth = window.innerWidth;
+
   const stikyElement = document.querySelectorAll(".advantages__scrolling_item");
   const resizeStikyElement = () => {
     if (windowInnerWidth >= 1024 && stikyElement) {

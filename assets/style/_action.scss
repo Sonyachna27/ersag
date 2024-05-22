@@ -103,6 +103,15 @@
 }
 .action__slide {
   height: auto;
+  transition: 0.3s linear;
+}
+.action__slide:hover > .action__slide_bottom {
+  color: $--white;
+  background-color: $--primary;
+  border-color: transparent;
+  & .action__more {
+    color: $--white;
+  }
 }
 .action__link {
   display: flex;
@@ -120,14 +129,14 @@
   border: 0.5px solid $--black;
   background: $--white;
   cursor: pointer;
-  &:hover {
-    color: $--white;
-    background-color: $--primary;
-    border-color: transparent;
-    & .action__more {
-      color: $--white;
-    }
-  }
+  //   &:hover {
+  //     color: $--white;
+  //     background-color: $--primary;
+  //     border-color: transparent;
+  //     & .action__more {
+  //       color: $--white;
+  //     }
+  //   }
   & p {
     white-space: nowrap;
     overflow: hidden;

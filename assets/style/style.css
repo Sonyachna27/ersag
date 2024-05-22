@@ -381,6 +381,14 @@ h3 {
 .header {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1023px) {
+  .header {
+    position: fixed;
+    height: auto;
+    width: 100%;
+    z-index: 50;
+  }
+}
 
 .header__top {
   background-color: #e9ffe8;
@@ -497,6 +505,12 @@ h3 {
 
 .header__nav {
   background-color: #fff;
+  z-index: 500;
+}
+.header__nav.fixed-header-nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
 }
 @media screen and (max-width: 1023px) {
   .header__nav {
@@ -506,19 +520,17 @@ h3 {
     width: 100%;
     height: calc(100vh - 100px);
     position: fixed;
-    top: -100%;
-    left: 0;
-    transform: scale(0);
+    left: -100%;
+    top: 100px;
     background-color: #8ac900;
     transition: all 0.5s ease;
-    z-index: 20;
     padding: 0 20px;
   }
   .open .header__nav {
-    top: 100px;
-    transform: scale(1);
+    left: 0;
     align-items: flex-start;
     gap: 30px;
+    top: 100px;
     height: calc(100vh - 100px);
     overflow: hidden;
     overflow-y: auto;
@@ -785,6 +797,9 @@ h3 {
 }
 .advantages__content p:nth-last-of-type(1) {
   margin-bottom: 30px;
+}
+.advantages__content .btn {
+  max-width: 233px;
 }
 .advantages__scrolling_item {
   width: 100%;
@@ -1082,6 +1097,16 @@ h3 {
 
 .action__slide {
   height: auto;
+  transition: 0.3s linear;
+}
+
+.action__slide:hover > .action__slide_bottom {
+  color: #fff;
+  background-color: #8ac900;
+  border-color: transparent;
+}
+.action__slide:hover > .action__slide_bottom .action__more {
+  color: #fff;
 }
 
 .action__link {
@@ -1101,14 +1126,6 @@ h3 {
   border: 0.5px solid #383838;
   background: #fff;
   cursor: pointer;
-}
-.action__slide_bottom:hover {
-  color: #fff;
-  background-color: #8ac900;
-  border-color: transparent;
-}
-.action__slide_bottom:hover .action__more {
-  color: #fff;
 }
 .action__slide_bottom p {
   white-space: nowrap;
