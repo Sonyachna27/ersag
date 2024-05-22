@@ -5,6 +5,8 @@
     height: auto;
     width: 100%;
     z-index: 50;
+    top: 0;
+    left: 0;
   }
 }
 .header__top {
@@ -121,15 +123,24 @@
 .header__nav {
   background-color: $--white;
   z-index: 500;
+  animation-duration: 0.5s;
+  animation-iteration-count: forwards;
   &.fixed-header-nav {
     top: 0;
     position: fixed;
     width: 100%;
-    animation: smoothScroll 1s forwards;
   }
   @keyframes smoothScroll {
     0% {
       transform: translateY(-40px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes removeSmoothScroll {
+    0% {
+      transform: translateY(40px);
     }
     100% {
       transform: translateY(0px);
