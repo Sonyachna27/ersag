@@ -49,6 +49,7 @@
   }
   & p {
     margin-bottom: 20px;
+    @include text-regular;
   }
 }
 .contact__content_links {

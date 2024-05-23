@@ -79,6 +79,7 @@
   padding: 20px 0;
   text-align: center;
   border-top: 0.5px solid $--black;
+  @include text-regular-xs;
 }
 .footer__copy {
   display: flex;
@@ -92,6 +93,9 @@
     text-align: center;
     padding: 20px 0 0 0;
     flex-direction: column-reverse;
+  }
+  & p {
+    @include text-regular-xs;
   }
 }
 .lumious {
