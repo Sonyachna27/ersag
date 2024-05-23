@@ -87,4 +87,7 @@
   align-items: center;
   justify-content: center;
   transition: 0.3s linear;
+  & span {
+    @include text-regular;
+  }
 }

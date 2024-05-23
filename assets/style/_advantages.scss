@@ -24,6 +24,7 @@
     }
     & p {
       margin-bottom: 20px;
+      @include text-regular;
       &:nth-last-of-type(1) {
         margin-bottom: 30px;
       }
@@ -101,5 +102,6 @@
   & p {
     max-width: 400px;
     width: 100%;
+    @include text-regular-height;
   }
 }

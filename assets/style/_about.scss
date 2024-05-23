@@ -52,7 +52,7 @@
     padding: 50px;
     border-radius: 20px;
     border: 0.5px solid $--black;
-    background-color: $--secondary;
+    background-color: $--white;
     width: 52%;
     display: flex;
     justify-content: center;
@@ -68,12 +68,17 @@
     }
     & p {
       margin-bottom: 20px;
-      &:nth-last-of-type(1) {
-        margin-bottom: 56px;
-      }
+      @include text-regular-height;
     }
     & .btn {
+      margin-top: 40px;
       max-width: 306px;
+    }
+    & div {
+      padding: 30px;
+      background-color: $--secondary;
+      border-radius: 15px;
+      @include text-regular-height;
     }
   }
 }

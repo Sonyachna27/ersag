@@ -87,4 +87,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   //
+  //   const container = document.querySelector(".footer__animate");
+  //   const promoContainer = document.querySelector(".promo-container");
+  //   const spans = Array.from(container.querySelectorAll(".promo-m"));
+  //   const containerWidth = container.offsetWidth;
+  //   let totalWidth = 0;
+
+  //   // Обчислення загальної ширини всіх span елементів
+  //   spans.forEach((span) => {
+  //     totalWidth += span.offsetWidth;
+  //   });
+
+  //   // Клонування елементів, щоб забезпечити безперервну анімацію
+  //   while (totalWidth < containerWidth * 2) {
+  //     spans.forEach((span) => {
+  //       let clonedSpan = span.cloneNode(true);
+  //       promoContainer.appendChild(clonedSpan);
+  //       totalWidth += clonedSpan.offsetWidth;
+  //     });
+  //   }
 });

@@ -1,0 +1,66 @@
+.stairs__container {
+  display: flex;
+  gap: 60px 20px;
+  flex-wrap: wrap;
+}
+.step {
+  border-radius: 20px;
+  border: 0.5px solid $--black;
+  padding: 60px 40px;
+  position: relative;
+  height: fit-content;
+  width: calc((100% / 3) - 15px);
+  @media screen and (min-width: 1024px) {
+    &:nth-child(3n + 2) {
+      margin-top: 80px;
+    }
+    &:nth-child(3n + 3) {
+      margin-top: 160px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    width: calc((100% / 2) - 15px);
+    &:nth-child(odd) {
+      margin-top: -80px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    &:nth-child(even),
+    &:nth-child(odd) {
+      margin-top: 0;
+    }
+  }
+
+  //   &:nth-child(even) {
+  //     margin-top: 80px;
+  //   }
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 105px;
+    max-height: 100px;
+    aspect-ratio: 1 / 1;
+  }
+  & h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      min-height: 80px;
+    }
+  }
+  & h4 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  & p {
+    @include text-regular-s-height;
+    margin-bottom: 20px;
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+  }
+}
