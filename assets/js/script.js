@@ -36,10 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  let heightAdvantagesContent = document.querySelector(
-    ".advantages__content"
-  ).offsetHeight;
-
   const stikyElement = document.querySelectorAll(".advantages__scrolling_item");
   const resizeStikyElement = () => {
     windowInnerWidth = window.innerWidth; // Оновлення глобальної константи
@@ -85,25 +81,14 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
+  // функція для аккордеону
 
-  //
-  //   const container = document.querySelector(".footer__animate");
-  //   const promoContainer = document.querySelector(".promo-container");
-  //   const spans = Array.from(container.querySelectorAll(".promo-m"));
-  //   const containerWidth = container.offsetWidth;
-  //   let totalWidth = 0;
-
-  //   // Обчислення загальної ширини всіх span елементів
-  //   spans.forEach((span) => {
-  //     totalWidth += span.offsetWidth;
-  //   });
-
-  //   // Клонування елементів, щоб забезпечити безперервну анімацію
-  //   while (totalWidth < containerWidth * 2) {
-  //     spans.forEach((span) => {
-  //       let clonedSpan = span.cloneNode(true);
-  //       promoContainer.appendChild(clonedSpan);
-  //       totalWidth += clonedSpan.offsetWidth;
-  //     });
-  //   }
+  const accordionItemsProduct = document.querySelectorAll(".accord-item");
+  if (accordionItemsProduct) {
+    accordionItemsProduct.forEach((item) => {
+      item.addEventListener("click", function () {
+        this.classList.toggle("active");
+      });
+    });
+  }
 });

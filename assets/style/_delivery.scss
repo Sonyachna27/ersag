@@ -1,0 +1,45 @@
+.delivery__info {
+  display: flex;
+  align-content: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.delivery__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border: 0.5px solid $--black;
+  border-radius: 20px;
+  background-color: $--white;
+  padding: 60px;
+  width: calc(50% - 10px);
+  height: auto;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    padding: 40px;
+  }
+  & p {
+    flex-grow: 1;
+  }
+  & svg {
+    margin: 0 auto;
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
+    @media screen and (max-width: 375px) {
+      max-width: 150px;
+    }
+  }
+  &:nth-child(3n + 3) {
+    width: 100%;
+
+    & p {
+      max-width: 402px;
+      margin: 0 auto;
+    }
+  }
+}

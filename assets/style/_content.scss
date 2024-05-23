@@ -1,0 +1,80 @@
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 30px;
+  background-color: $--white;
+  border: 0.5px solid $--primary;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  @media screen and (max-width: 550px) {
+    padding: 30px 20px;
+  }
+  & p {
+    max-width: 410px;
+    margin-bottom: 0;
+  }
+  & a:has(svg) {
+    max-width: 48px;
+    max-height: 48px;
+    & svg {
+      max-width: 48px;
+      max-height: 48px;
+    }
+  }
+}
+.blue-block {
+  @include green-block;
+  margin-bottom: 30px;
+}
+
+.instruction__wrap {
+  display: flex;
+  gap: 20px;
+  align-content: stretch;
+}
+.instruction_item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: auto;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+  & h3 {
+    flex-grow: 1;
+  }
+  & img {
+    border-radius: 15px;
+    object-fit: cover;
+  }
+}
+.content-flex {
+  display: flex;
+  gap: 40px;
+  height: auto;
+  @media screen and (max-width: 867px) {
+    flex-direction: column;
+  }
+  & img {
+    width: 32%;
+    @media screen and (max-width: 867px) {
+      width: 100%;
+
+      aspect-ratio: 1 / 1;
+    }
+  }
+  & div {
+    @include green-block;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 0;
+    @media screen and (max-width: 867px) {
+      width: 100%;
+    }
+  }
+}

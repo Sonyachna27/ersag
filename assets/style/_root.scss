@@ -49,7 +49,8 @@ main {
 }
 
 h1 {
-  @include titleH1;
+  @include titleH2;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -138,6 +139,14 @@ h4 {
   text-align: center;
   margin-bottom: 40px;
 }
+.title-center-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 40px;
+}
 .title-row {
   display: flex;
   align-items: center;
@@ -145,6 +154,24 @@ h4 {
   gap: 40px;
   margin-bottom: 40px;
   @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+  height: 100%;
+  margin-bottom: 40px;
+  @media screen and (max-width: 1023px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 550px) {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -239,8 +266,7 @@ h4 {
 
 .breadcrumbs {
   padding: 5px 0;
-
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   &__wrap {
     display: flex;
     align-items: center;
@@ -267,6 +293,7 @@ h4 {
   max-width: 100%;
   width: 100%;
   border-radius: 20px 20px 0 0;
+  flex-grow: 1;
 }
 .feature-title h3 {
   @include titleH4;
@@ -278,5 +305,49 @@ h4 {
   border-radius: 0 0 20px 20px;
   & ul {
     @include decorList;
+  }
+}
+
+.faq__container {
+  & h2 {
+    @media screen and (max-width: 550px) {
+      text-wrap: balance;
+      & span {
+        margin: 5px;
+        display: inline-block;
+        max-width: fit-content;
+      }
+    }
+  }
+}
+.page-main {
+  display: flex;
+  gap: 40px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.main-content {
+  width: 75%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+.navbar {
+  width: 25%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  & h2 {
+    margin-bottom: 30px;
+  }
+}
+.navbar__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & .action__item_bottom {
+    padding: 20px;
   }
 }

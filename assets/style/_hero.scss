@@ -4,7 +4,7 @@
   border: 0.5px solid $--black;
   display: flex;
   align-items: stretch;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 867px) {
     justify-content: center;
     border-radius: 500px 500px 20px 20px;
     flex-direction: column;
@@ -23,7 +23,7 @@
     padding: 113px 85px;
     width: 42.5%;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 867px) {
     width: 100%;
     aspect-ratio: 1 / 1;
   }
@@ -31,36 +31,62 @@
     padding: 89px 85px;
   }
 
+  &.hero_v2_image {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    & img {
+      max-width: 100%;
+      align-self: stretch;
+      border-radius: 50%;
+    }
+  }
   & img {
     max-width: 380px;
     width: 100%;
   }
 }
 .hero__content {
-  width: 49%;
+  width: 57%;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   @media screen and (max-width: 1023px) {
     padding: 50px 30px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 867px) {
     width: 100%;
   }
   & h1 {
     margin-bottom: 20px;
+    @include titleH1;
+  }
+  & h2 {
+    @include titleH3;
+    margin-bottom: 30px;
   }
   & p {
     max-width: 550px;
     margin-bottom: 20px;
     @include text-regular;
-
-    &:nth-last-of-type(1) {
-      margin-bottom: 50px;
+    .hero_v2 & {
+      max-width: 100%;
     }
+
     @media screen and (max-width: 767px) {
       max-width: 100%;
+    }
+  }
+  & .btn {
+    margin-top: 50px;
+  }
+  div {
+    padding: 20px 40px;
+    background-color: $--secondary;
+    @media screen and (max-width: 550px) {
+      padding: 20px;
     }
   }
 }
