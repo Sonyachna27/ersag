@@ -4,10 +4,7 @@
   font-weight: 700;
   text-transform: uppercase;
   line-height: 120%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+
   @media screen and (max-width: 767px) {
     font-size: 28px;
   }
@@ -27,10 +24,7 @@
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+
   @media screen and (max-width: 767px) {
     font-size: 20px;
     line-height: auto;
@@ -52,10 +46,7 @@
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+
   & span {
     font: inherit;
     padding: 4px 15px;
@@ -154,4 +145,9 @@
       height: 22px;
     }
   }
+}
+@mixin green-block {
+  padding: 40px;
+  background-color: $--secondary;
+  border-radius: 10px;
 }
