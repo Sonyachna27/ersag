@@ -65,8 +65,18 @@
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
+
+  & span {
+    font: inherit;
+    padding: 4px 15px;
+    margin-left: 3px;
+    background-color: $--primary;
+    color: $--white;
+    border-radius: 0px 500px 500px 0px;
+    margin-top: 5px;
+  }
   @media screen and (max-width: 767px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @mixin text-regular {

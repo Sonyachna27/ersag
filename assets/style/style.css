@@ -190,9 +190,18 @@ h4 {
   font-weight: 500;
   line-height: 120%;
 }
+h4 span {
+  font: inherit;
+  padding: 4px 15px;
+  margin-left: 3px;
+  background-color: #8ac900;
+  color: #fff;
+  border-radius: 0px 500px 500px 0px;
+  margin-top: 5px;
+}
 @media screen and (max-width: 767px) {
   h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -502,9 +511,18 @@ h4 {
   font-weight: 500;
   line-height: 120%;
 }
+.feature-title h3 span {
+  font: inherit;
+  padding: 4px 15px;
+  margin-left: 3px;
+  background-color: #8ac900;
+  color: #fff;
+  border-radius: 0px 500px 500px 0px;
+  margin-top: 5px;
+}
 @media screen and (max-width: 767px) {
   .feature-title h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -620,9 +638,18 @@ h4 {
   text-transform: uppercase;
   padding: 20px 30px;
 }
+.accord-item-top span {
+  font: inherit;
+  padding: 4px 15px;
+  margin-left: 3px;
+  background-color: #8ac900;
+  color: #fff;
+  border-radius: 0px 500px 500px 0px;
+  margin-top: 5px;
+}
 @media screen and (max-width: 767px) {
   .accord-item-top {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -736,6 +763,9 @@ h4 {
 }
 .header__social span {
   margin-right: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: auto;
 }
 @media screen and (max-width: 767px) {
   .header__social span {
@@ -763,6 +793,7 @@ h4 {
   margin-right: 5px;
   line-height: normal;
   font-weight: 500;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
   .head-text {
@@ -914,6 +945,9 @@ h4 {
 }
 .header__nav_container nav ul li {
   position: relative;
+}
+.header__nav_container nav ul li a {
+  text-transform: uppercase;
 }
 .header__nav_container nav ul li:after {
   content: "";
@@ -2394,9 +2428,18 @@ h4 {
   margin-bottom: 10px;
   display: block;
 }
+.price span {
+  font: inherit;
+  padding: 4px 15px;
+  margin-left: 3px;
+  background-color: #8ac900;
+  color: #fff;
+  border-radius: 0px 500px 500px 0px;
+  margin-top: 5px;
+}
 @media screen and (max-width: 767px) {
   .price {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -2415,6 +2458,9 @@ h4 {
 }
 .product__descr h1 {
   margin-bottom: 10px;
+}
+.product__descr .accord-item-top p {
+  margin: 0;
 }
 .product__descr p {
   margin-bottom: 20px;
@@ -2493,9 +2539,18 @@ h4 {
   line-height: 120%;
   margin-bottom: 20px;
 }
+.article h3 span {
+  font: inherit;
+  padding: 4px 15px;
+  margin-left: 3px;
+  background-color: #8ac900;
+  color: #fff;
+  border-radius: 0px 500px 500px 0px;
+  margin-top: 5px;
+}
 @media screen and (max-width: 767px) {
   .article h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .article h3 span {
@@ -2590,6 +2645,31 @@ h4 {
   margin: 0 auto;
 }
 
+.content__information.article p {
+  font-size: 14px;
+}
+.content__information.article h3 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.content__information.article h3 span {
+  font: inherit;
+  padding: 4px 15px;
+  margin-left: 3px;
+  background-color: #8ac900;
+  color: #fff;
+  border-radius: 0px 500px 500px 0px;
+  margin-top: 5px;
+}
+@media screen and (max-width: 767px) {
+  .content__information.article h3 {
+    font-size: 20px;
+  }
+}
+
 .question {
   display: flex;
   align-items: center;
@@ -2631,6 +2711,14 @@ h4 {
   gap: 20px;
   align-content: stretch;
 }
+.instruction__wrap h3 {
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  .instruction__wrap {
+    flex-direction: column;
+  }
+}
 
 .instruction_item {
   display: flex;
@@ -2643,8 +2731,13 @@ h4 {
     flex-direction: column;
   }
 }
-.instruction_item h3 {
+.instruction_item h4 {
   flex-grow: 1;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.instruction_item h4 span {
+  display: inline-block;
 }
 .instruction_item img {
   border-radius: 15px;
