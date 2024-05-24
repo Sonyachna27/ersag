@@ -23,6 +23,7 @@
   }
   & p {
     margin-bottom: 20px;
+
     @include text-regular-s-height;
     & span {
       display: inline-block;

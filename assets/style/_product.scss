@@ -51,6 +51,11 @@
   & h1 {
     margin-bottom: 10px;
   }
+  & .accord-item-top {
+    p {
+      margin: 0;
+    }
+  }
   & p {
     margin-bottom: 20px;
     &:nth-last-of-type((1)) {
