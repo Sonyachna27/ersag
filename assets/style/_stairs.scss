@@ -32,18 +32,14 @@
     }
   }
 
-  //   &:nth-child(even) {
-  //     margin-top: 80px;
-  //   }
-
   & img {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: calc(0% - 50px);
+    left: calc(50% - 52px);
     max-width: 105px;
     max-height: 100px;
     aspect-ratio: 1 / 1;
+    animation: rotate-image 10s linear infinite;
   }
   & h3 {
     text-align: center;

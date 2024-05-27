@@ -70,8 +70,8 @@
 
     @media screen and (max-width: 1023px) {
       display: block;
-      width: 45px;
-      height: 45px;
+      width: 50px;
+      height: 50px;
       border: 0.5px solid $--white;
       background-color: $--white;
       cursor: pointer;
@@ -81,10 +81,10 @@
       border-radius: 50%;
 
       .btn-menu-line {
-        width: 27px;
+        width: 28px;
         height: 2px;
         position: absolute;
-        left: 8px;
+        left: 10px;
         background-color: $--primary;
         transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
       }
@@ -99,7 +99,7 @@
 
       .open & {
         .btn-menu-line1 {
-          transform: rotate(45deg) translate(2px, 2px) scale(1.15) rotate(92deg);
+          transform: rotate(45deg) translate(5px, 5px) scale(1.15) rotate(92deg);
         }
 
         .btn-menu-line2 {
@@ -107,8 +107,8 @@
         }
 
         .btn-menu-line3 {
-          transform: rotate(-45deg) translate(4px, -4px) scale(1.15)
-            rotate(-92deg);
+          transform: rotate(310deg) translate(5px, -5px) scale(1.15)
+            rotate(-86deg);
         }
       }
     }

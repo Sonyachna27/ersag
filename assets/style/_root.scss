@@ -282,6 +282,7 @@ h4 {
   border-radius: 20px;
   border: 0.5px solid $--black;
   width: 42%;
+  background-color: $--white;
 }
 .feature-title {
   display: flex;
@@ -348,5 +349,19 @@ h4 {
   gap: 10px;
   & .action__item_bottom {
     padding: 20px;
+  }
+}
+
+// анімація
+
+@keyframes rotate-image {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

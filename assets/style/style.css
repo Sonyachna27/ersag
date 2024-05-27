@@ -491,6 +491,7 @@ h4 span {
   border-radius: 20px;
   border: 0.5px solid #383838;
   width: 42%;
+  background-color: #fff;
 }
 
 .feature-title {
@@ -605,6 +606,14 @@ h4 span {
   padding: 20px;
 }
 
+@keyframes rotate-image {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .accord {
   display: flex;
   flex-direction: column;
@@ -816,8 +825,8 @@ h4 span {
 @media screen and (max-width: 1023px) {
   .header__logo_container .burgerBtn {
     display: block;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border: 0.5px solid #fff;
     background-color: #fff;
     cursor: pointer;
@@ -827,10 +836,10 @@ h4 span {
     border-radius: 50%;
   }
   .header__logo_container .burgerBtn .btn-menu-line {
-    width: 27px;
+    width: 28px;
     height: 2px;
     position: absolute;
-    left: 8px;
+    left: 10px;
     background-color: #8ac900;
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
   }
@@ -841,13 +850,13 @@ h4 span {
     bottom: 15px;
   }
   .open .header__logo_container .burgerBtn .btn-menu-line1 {
-    transform: rotate(45deg) translate(2px, 2px) scale(1.15) rotate(92deg);
+    transform: rotate(45deg) translate(5px, 5px) scale(1.15) rotate(92deg);
   }
   .open .header__logo_container .burgerBtn .btn-menu-line2 {
     opacity: 0;
   }
   .open .header__logo_container .burgerBtn .btn-menu-line3 {
-    transform: rotate(-45deg) translate(4px, -4px) scale(1.15) rotate(-92deg);
+    transform: rotate(310deg) translate(5px, -5px) scale(1.15) rotate(-86deg);
   }
 }
 
@@ -1170,6 +1179,7 @@ h4 span {
 .about__images_left .rotating {
   max-width: 150px;
   width: 100%;
+  animation: rotate-image 10s linear infinite;
 }
 .about__images_left_down {
   border-radius: 10px;
@@ -1703,6 +1713,11 @@ h4 span {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 375px) {
+  .catalog__item-img img {
+    max-width: 115px;
+  }
+}
 
 .catalog__item_content {
   padding: 10px 20px;
@@ -1715,6 +1730,7 @@ h4 span {
   align-items: center;
   justify-content: center;
   transition: 0.3s linear;
+  border-top: none;
 }
 .catalog__item_content span {
   font-size: 16px;
@@ -1949,7 +1965,8 @@ h4 span {
   display: flex;
   align-items: center;
   gap: 10px;
-  max-width: 235px;
+  max-width: 270px;
+  font-size: 12px;
 }
 
 .prod__content {
@@ -2205,12 +2222,12 @@ h4 span {
 }
 .step img {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: calc(0% - 50px);
+  left: calc(50% - 52px);
   max-width: 105px;
   max-height: 100px;
   aspect-ratio: 1/1;
+  animation: rotate-image 10s linear infinite;
 }
 .step h3 {
   text-align: center;
