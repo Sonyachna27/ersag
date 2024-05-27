@@ -80,7 +80,6 @@
     width: 32%;
     @media screen and (max-width: 867px) {
       width: 100%;
-
       aspect-ratio: 1 / 1;
     }
   }
@@ -94,6 +93,9 @@
     margin-bottom: 0;
     @media screen and (max-width: 867px) {
       width: 100%;
+    }
+    @media screen and (max-width: 867px) {
+      padding: 40px;
     }
   }
 }

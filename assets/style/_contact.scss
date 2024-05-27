@@ -11,7 +11,7 @@
   border-radius: 20px;
   border: 1px solid $--primary;
   background: $--secondary;
-  padding: 60px;
+  padding: 50px;
   width: 42%;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@
     width: 100%;
   }
   & img {
-    max-width: 380px;
+    max-width: 360px;
     width: 100%;
     aspect-ratio: 1 /1;
     min-width: 200px;
@@ -45,7 +45,7 @@
     width: 100%;
   }
   & h2 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   & p {
     margin-bottom: 20px;

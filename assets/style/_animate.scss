@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
   height: 331px;
+  @media screen and (min-width: 2200px) {
+    height: 500px;
+  }
 }
 .footer__animate__container {
   height: fit-content;
@@ -56,21 +59,49 @@
 .animate__top-container {
   transform: rotate(5deg);
   z-index: 2;
-  margin-bottom: -190px;
+  margin-bottom: -199px;
   @media screen and (max-width: 1200px) {
+    transform: rotate(7deg);
+  }
+  @media screen and (min-width: 768px) and (max-width: 871px) {
+    transform: rotate(9deg);
+  }
+  @media screen and (min-width: 660px) and (max-width: 767px) {
+    margin-bottom: -190px;
     transform: rotate(10deg);
   }
-  @media screen and (max-width: 767px) {
-    margin-bottom: -160px;
+  @media screen and (min-width: 480px) and (max-width: 659px) {
+    transform: rotate(13deg);
+    width: 130%;
+  }
+  @media screen and (min-width: 280px) and (max-width: 479px) {
+    transform: rotate(17deg);
+    width: 130%;
+    margin-bottom: -199px;
   }
 }
 .animate__bottom-container {
   transform: rotate(355deg);
   margin-top: 105px;
-  @media screen and (max-width: 1023px) {
+  @media screen and (min-width: 872px) and (max-width: 1023px) {
+    transform: rotate(-7deg);
+  }
+  @media screen and (min-width: 768px) and (max-width: 871px) {
+    transform: rotate(-9deg);
+  }
+  @media screen and (min-width: 660px) and (max-width: 767px) {
     transform: rotate(-10deg);
   }
-  @media screen and (max-width: 767px) {
+  //   @media screen and (min-width: 560px) and (max-width: 767px) {
+  //     transform: rotate(-13deg);
+  //   }
+  @media screen and (min-width: 480px) and (max-width: 659px) {
+    transform: rotate(346deg);
+    width: 125%;
+  }
+  @media screen and (min-width: 280px) and (max-width: 479px) {
+    transform: rotate(341deg);
+    width: 125%;
   }
 }
 .promo-m {
