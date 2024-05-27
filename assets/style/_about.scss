@@ -40,6 +40,8 @@
       & .rotating {
         max-width: 150px;
         width: 100%;
+        -webkit-animation: rotate-image 10s linear infinite;
+        animation: rotate-image 10s linear infinite;
       }
       &_down {
         border-radius: 10px;
