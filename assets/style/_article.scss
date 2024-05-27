@@ -1,5 +1,5 @@
 .article {
-  padding: 40px;
+  padding: 38px;
   background-color: $--white;
   border: 0.5px solid $--black;
   border-radius: 20px;
@@ -81,12 +81,13 @@
 }
 .article__img {
   background-color: $--secondary;
-  padding: 75px 0;
+  //   padding: 75px 0;
   margin-bottom: 30px;
   & img {
-    max-width: 320px;
+    max-width: 100%;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 0.46;
     margin: 0 auto;
+    object-fit: cover;
   }
 }

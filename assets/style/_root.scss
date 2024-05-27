@@ -214,7 +214,7 @@ h4 {
 
     background-position: center;
     background-repeat: no-repeat;
-    top: 0;
+    top: calc(50% - 22.5px);
     left: -45px;
     transition: 0.3s linear;
   }
@@ -222,7 +222,7 @@ h4 {
 .circle-mail {
   &::before {
     background-image: url("../images/mail.svg");
-    background-size: 23px;
+    // background-size: 23px;
   }
 }
 .black-circle {
