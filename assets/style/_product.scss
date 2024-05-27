@@ -56,6 +56,9 @@
       margin: 0;
     }
   }
+  & .product__accord {
+    margin-bottom: 0;
+  }
   & p {
     margin-bottom: 20px;
     &:nth-last-of-type((1)) {
