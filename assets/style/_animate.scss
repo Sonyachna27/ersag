@@ -1,17 +1,23 @@
 .animate__container {
   overflow: hidden;
-  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   height: 331px;
 }
 
-.footer__animate__container {
-  height: auto;
+.animate__top-container,
+.animate__bottom-container,
+.footer__animate-wrap {
   background-color: $--primary;
+  padding: 30px 0;
+  width: 110%;
+}
+.footer__animate-wrap {
+  background-color: $--primary;
+  padding: 30px 0;
+  height: auto;
 }
 .animate__top,
 .animate__bottom,
@@ -23,16 +29,7 @@
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
-  padding: 30px 0;
-  width: 100%;
-  width: 110%;
-  background-color: $--primary;
-  @media screen and (max-width: 767px) {
-    gap: 50px;
-    padding: 20px 0;
-  }
 }
-
 .animate__top span,
 .animate__bottom span,
 .footer__animate span {
@@ -40,33 +37,20 @@
   -ms-flex-align: center;
   align-items: center;
   -webkit-animation: move-rtl 6s linear infinite;
-  //   animation: move-rtl 6s linear infinite;
-  //   animation: animate 60s linear infinite;
-  color: $--white;
-  text-decoration: underline;
-  font-weight: 400;
+  animation: move-rtl 6s linear infinite;
+  color: #5870b6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-transform: uppercase;
   white-space: nowrap;
-  margin-right: 100px;
 }
-
-// .footer__animate span {
-//   -webkit-animation: move-rtl 6s linear infinite;
-//   animation: move-rtl 6s linear infinite;
-// }
-
-// .animate__top span {
-//   -webkit-animation: move-rtl 6s linear infinite;
-//   animation: move-rtl 6s linear infinite;
-// }
 
 .animate__bottom span {
   -webkit-animation: move-rtl-revers 6s linear infinite;
   animation: move-rtl-revers 6s linear infinite;
 }
-.animate__top {
+.animate__top-container {
   transform: rotate(5deg);
   z-index: 2;
   margin-bottom: -190px;
@@ -77,7 +61,7 @@
     margin-bottom: -160px;
   }
 }
-.animate__bottom {
+.animate__bottom-container {
   transform: rotate(355deg);
   margin-top: 105px;
   @media screen and (max-width: 1023px) {
@@ -110,15 +94,10 @@
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-  99% {
-    opacity: 1;
+
+  to {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    opacity: 0;
   }
 }
 
