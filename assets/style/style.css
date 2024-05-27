@@ -1592,6 +1592,7 @@ h4 span {
   background: #fff;
   cursor: pointer;
   flex-grow: 1;
+  transition: 0.3s linear;
 }
 .action__item_bottom p {
   margin-bottom: 15px;
@@ -2479,6 +2480,9 @@ h4 span {
 }
 .product__descr .accord-item-top p {
   margin: 0;
+}
+.product__descr .product__accord {
+  margin-bottom: 0;
 }
 .product__descr p {
   margin-bottom: 20px;

@@ -134,6 +134,7 @@
   background: $--white;
   cursor: pointer;
   flex-grow: 1;
+  transition: 0.3s linear;
 
   & p {
     margin-bottom: 15px;
