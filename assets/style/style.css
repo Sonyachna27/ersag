@@ -1363,6 +1363,11 @@ h4 span {
   height: 331px;
 }
 
+.footer__animate__container {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .animate__top-container,
 .animate__bottom-container,
 .footer__animate-wrap {
@@ -1914,6 +1919,15 @@ h4 span {
 .footer__contact span,
 .footer__social span {
   text-transform: uppercase;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.footer__contact .contact__wrap {
+  padding-top: 0;
 }
 
 .footer__social a {
