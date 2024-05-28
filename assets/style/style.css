@@ -1171,10 +1171,13 @@ h4 span {
   width: 60%;
   border-radius: 10px;
   height: 100%;
+  aspect-ratio: 485/480;
+}
+.about__images_right img {
+  height: 100%;
 }
 @media screen and (max-width: 1023px) {
   .about__images_right {
-    aspect-ratio: 1/0.75;
     width: 70%;
   }
 }
@@ -1183,18 +1186,28 @@ h4 span {
   flex-direction: column;
   gap: 35px;
   justify-content: space-between;
-  align-items: center;
   flex-grow: 1;
+}
+@media screen and (max-width: 1023px) {
+  .about__images_left {
+    justify-content: none;
+  }
 }
 .about__images_left .rotating {
   max-width: 150px;
   width: 100%;
   animation: rotate-image 10s linear infinite;
 }
-.about__images_left_down {
+.about__images_down {
   border-radius: 10px;
   max-width: 100%;
   width: 100%;
+  aspect-ratio: 231/299;
+}
+@media screen and (max-width: 1023px) {
+  .about__images_down {
+    height: 100%;
+  }
 }
 .about__content {
   padding: 50px;
