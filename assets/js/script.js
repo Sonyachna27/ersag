@@ -92,3 +92,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+//функція анімації при скролі
+
+const catalogItem = document.querySelectorAll(".catalog__item");
+
+const options = {
+  root: document,
+  rootMargin: "0px",
+  threshold: 0.1,
+};
+
+const callback = function (entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && !entry.target.classList.contains("animated")) {
+      entry.target.classList.add("animated");
+    }
+    // else if (
+    //   !entry.isIntersecting &&
+    //   entry.target.classList.contains("animated")
+    // ) {
+    //   entry.target.classList.remove("animated");
+    // }
+  });
+};
+
+const observer = new IntersectionObserver(callback, options);
+
+catalogItem.forEach((item) => observer.observe(item));
