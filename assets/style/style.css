@@ -97,7 +97,7 @@ body {
 
 @media screen and (max-width: 1023px) {
   main {
-    margin-top: 120px;
+    margin-top: 130px;
   }
 }
 
@@ -811,7 +811,7 @@ h4 span {
 
 .switch {
   max-width: 65px;
-  max-height: 18px;
+  max-height: 25px;
 }
 
 .header__logo_container {
@@ -914,7 +914,7 @@ h4 span {
     left: 0;
     align-items: flex-start;
     gap: 30px;
-    top: 100px;
+    top: 120px;
     height: calc(100vh - 100px);
     overflow: hidden;
     overflow-y: auto;
@@ -2237,7 +2237,7 @@ h4 span {
 }
 @media screen and (max-width: 860px) {
   .production__block:nth-child(odd) {
-    padding: 60px 50px;
+    padding: 40px;
     border-radius: 15px;
   }
 }
@@ -2249,7 +2249,7 @@ h4 span {
 }
 @media screen and (max-width: 860px) {
   .production__block:nth-child(even) {
-    padding: 60px 50px;
+    padding: 40px;
     border-radius: 15px;
   }
 }
