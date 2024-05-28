@@ -1170,6 +1170,7 @@ h4 span {
   flex-grow: 2;
   width: 60%;
   border-radius: 10px;
+  height: 100%;
 }
 @media screen and (max-width: 1023px) {
   .about__images_right {
