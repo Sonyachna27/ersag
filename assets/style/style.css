@@ -2483,6 +2483,11 @@ h4 span {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 1023px) {
+  .ware__item-img img {
+    min-height: 150px;
+  }
+}
 
 .ware__item_descr {
   border-radius: 0 0 15px 15px;
