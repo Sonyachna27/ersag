@@ -53,10 +53,12 @@
   flex-direction: column;
   gap: 20px;
   height: auto;
+  width: calc((100% / 2) - 10px);
   @media screen and (max-width: 767px) {
     flex-direction: column;
+    width: 100%;
   }
-  & h4 {
+  & h3 {
     flex-grow: 1;
     margin-bottom: 0;
     font-size: 20px;
@@ -67,6 +69,7 @@
   & img {
     border-radius: 15px;
     object-fit: cover;
+    height: auto;
   }
 }
 .content-flex {

@@ -27,6 +27,7 @@
     @include text-regular-s-height;
     & span {
       display: inline-block;
+      color: $--primary;
     }
     & a {
       color: $--primary;
