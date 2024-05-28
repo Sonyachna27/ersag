@@ -2022,7 +2022,6 @@ h4 span {
 @media screen and (max-width: 1023px) {
   .footer__copy {
     text-align: center;
-    padding: 20px 0 0 0;
     flex-direction: column-reverse;
   }
 }

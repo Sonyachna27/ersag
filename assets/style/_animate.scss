@@ -92,9 +92,7 @@
   @media screen and (min-width: 660px) and (max-width: 767px) {
     transform: rotate(-10deg);
   }
-  //   @media screen and (min-width: 560px) and (max-width: 767px) {
-  //     transform: rotate(-13deg);
-  //   }
+
   @media screen and (min-width: 480px) and (max-width: 659px) {
     transform: rotate(346deg);
     width: 125%;
@@ -111,6 +109,7 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
 @-webkit-keyframes move-rtl {
   0% {
     -webkit-transform: translateX(0);
@@ -136,6 +135,14 @@
 }
 
 @keyframes move-rtl-revers {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes move-rtl-revers {
   0% {
     transform: translateX(-100%);
   }
