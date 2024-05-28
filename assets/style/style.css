@@ -116,17 +116,16 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%;
   text-transform: uppercase;
+  line-height: 120%;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 20px;
-    line-height: auto;
+    font-size: 28px;
   }
 }
 h1 span {
@@ -1248,8 +1247,29 @@ h4 span {
     padding: 30px 20px;
   }
 }
-.about__content h3 {
+.about__content h3, .about__content h2 {
   margin-bottom: 12px;
+}
+.about__content h2 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.about__content h2 span {
+  font: inherit;
+  padding: 4px 15px;
+  margin-left: 3px;
+  background-color: #8ac900;
+  color: #fff;
+  border-radius: 0px 500px 500px 0px;
+  margin-top: 5px;
+}
+@media screen and (max-width: 767px) {
+  .about__content h2 {
+    font-size: 20px;
+  }
 }
 .about__content p {
   margin-bottom: 20px;
@@ -2452,6 +2472,10 @@ h4 span {
   text-align: center;
 }
 
+.ware__container h1 {
+  margin-bottom: 5px;
+}
+
 .ware__item {
   border-radius: 15px;
   border: 0.5px solid #383838;
@@ -2503,6 +2527,10 @@ h4 span {
 }
 .ware__item_descr .btn {
   margin-top: auto;
+}
+
+.product__title {
+  margin-bottom: 40px;
 }
 
 .product__container {
@@ -2586,14 +2614,11 @@ h4 span {
     padding: 30px;
   }
 }
-.product__descr h1 {
+.product__descr h2 {
   margin-bottom: 10px;
 }
 .product__descr .accord-item-top p {
   margin: 0;
-}
-.product__descr .product__accord {
-  margin-bottom: 0;
 }
 .product__descr p {
   margin-bottom: 20px;
@@ -2601,9 +2626,15 @@ h4 span {
 .product__descr p:nth-last-of-type((1)) {
   margin-bottom: 40px;
 }
+.product__descr p .accord-item-bottom {
+  margin-bottom: 0;
+}
 .product__descr .btn {
   max-width: 224px;
   margin-bottom: 40px;
+}
+.product__descr .product__accord-item-bottom p {
+  margin-bottom: 0;
 }
 
 .properties__items {
@@ -2661,6 +2692,7 @@ h4 span {
 }
 .article p span {
   display: inline-block;
+  color: #8ac900;
 }
 .article p a {
   color: #8ac900;
@@ -2859,24 +2891,27 @@ h4 span {
   flex-direction: column;
   gap: 20px;
   height: auto;
+  width: calc(50% - 10px);
 }
 @media screen and (max-width: 767px) {
   .instruction_item {
     flex-direction: column;
+    width: 100%;
   }
 }
-.instruction_item h4 {
+.instruction_item h3 {
   flex-grow: 1;
   margin-bottom: 0;
   font-size: 20px;
 }
-.instruction_item h4 span {
+.instruction_item h3 span {
   display: inline-block;
 }
 .instruction_item img {
   border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
+  height: auto;
 }
 
 .content-flex {
