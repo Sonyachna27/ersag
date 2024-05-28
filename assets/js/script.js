@@ -95,7 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //функція анімації при скролі
 
-const catalogItem = document.querySelectorAll(".catalog__item");
+const stepItem = document.querySelectorAll(".step");
+const catalogItemAnimation = document.querySelectorAll(
+  ".catalog__item-animation"
+);
+const wareItemAnimation = document.querySelectorAll(".ware__item-animation");
 
 const options = {
   root: document,
@@ -108,15 +112,18 @@ const callback = function (entries, observer) {
     if (entry.isIntersecting && !entry.target.classList.contains("animated")) {
       entry.target.classList.add("animated");
     }
-    // else if (
-    //   !entry.isIntersecting &&
-    //   entry.target.classList.contains("animated")
-    // ) {
-    //   entry.target.classList.remove("animated");
-    // }
   });
 };
 
 const observer = new IntersectionObserver(callback, options);
 
-catalogItem.forEach((item) => observer.observe(item));
+stepItem.length === 0
+  ? null
+  : stepItem.forEach((item) => observer.observe(item));
+
+catalogItemAnimation.length === 0
+  ? null
+  : catalogItemAnimation.forEach((item) => observer.observe(item));
+wareItemAnimation.length === 0
+  ? null
+  : wareItemAnimation.forEach((item) => observer.observe(item));
