@@ -1744,29 +1744,6 @@ h4 span {
   }
 }
 
-.action-post-title h1 {
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 767px) {
-  .action-post-title h1 {
-    font-size: 20px;
-    line-height: auto;
-  }
-}
-.action-post-title h1 span {
-  font: inherit;
-  padding: 4px 15px;
-  margin-left: 3px;
-  background-color: #8ac900;
-  color: #fff;
-  border-radius: 0px 500px 500px 0px;
-  margin-top: 5px;
-}
-
 .catalog .btn {
   margin: 0 auto;
   max-width: 253px;
