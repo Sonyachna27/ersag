@@ -1755,7 +1755,7 @@ h4 span {
   transition: 0.3s linear;
   opacity: 0;
 }
-.catalog__item .animated {
+.catalog__item .catalog__item-animation .animated {
   opacity: 1;
 }
 .catalog__item:hover .catalog__item_content {

@@ -15,8 +15,10 @@
   width: 100%;
   transition: 0.3s linear;
   opacity: 0;
-  & .animated {
-    opacity: 1;
+  & .catalog__item-animation {
+    & .animated {
+      opacity: 1;
+    }
   }
   &:hover {
     & .catalog__item_content {
