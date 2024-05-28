@@ -87,6 +87,10 @@ button {
   src: url(../fonts/Roboto/Roboto-Bold.ttf);
   font-weight: 700;
 }
+* {
+  border: 1px solid red;
+}
+
 body {
   font-family: "Roboto";
   font-size: 16px;
@@ -367,11 +371,11 @@ h4 span {
 }
 
 .grid-item {
-  width: calc(25% - 30px);
+  width: calc(25% - 15px);
 }
 @media screen and (max-width: 1023px) {
   .grid-item {
-    width: calc(33.3333333333% - 20px);
+    width: calc(33.3333333333% - 15px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -1221,6 +1225,7 @@ h4 span {
   max-width: 100%;
   width: 100%;
   aspect-ratio: 231/299;
+  height: 100%;
 }
 @media screen and (max-width: 1023px) {
   .about__images_down {
@@ -1805,11 +1810,13 @@ h4 span {
   border-radius: 500px 500px 0px 0px;
 }
 .catalog__item-img img {
-  max-width: 150px;
-  aspect-ratio: 0.5/0.9;
+  position: relative;
+  max-width: 130px;
+  height: 90%;
   z-index: 1;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 500px 500px 0px 0px;
 }
 @media screen and (max-width: 375px) {
   .catalog__item-img img {
@@ -1829,6 +1836,7 @@ h4 span {
   justify-content: center;
   transition: 0.3s linear;
   border-top: none;
+  flex-grow: 1;
 }
 .catalog__item_content span {
   font-size: 16px;
@@ -2452,6 +2460,8 @@ h4 span {
   border-radius: 15px;
   border: 0.5px solid #383838;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .ware__item-img {
@@ -2461,16 +2471,30 @@ h4 span {
   width: 100%;
   padding: 15px;
   border-radius: 15px 15px 0 0;
+  height: 100%;
+  aspect-ratio: 1/1;
+  flex-grow: 1;
+  max-height: 310px;
+  height: 100%;
 }
 .ware__item-img img {
-  max-width: 150px;
+  max-width: 280px;
   max-height: 80%;
+  min-height: 280px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .ware__item_descr {
   border-radius: 0 0 15px 15px;
   padding: 20px;
   border-top: 0.5px solid #383838;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .ware__item_descr span {
   font-size: 14px;
@@ -2484,6 +2508,9 @@ h4 span {
   font-weight: 400;
   line-height: auto;
   margin-bottom: 20px;
+}
+.ware__item_descr .btn {
+  margin-top: auto;
 }
 
 .product__container {

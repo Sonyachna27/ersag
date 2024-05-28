@@ -21,7 +21,9 @@ $--white: #fff;
 $--black: #383838;
 $--green-light: #c4dbc3;
 $--black-light: #4f4f4f;
-
+* {
+  border: 1px solid red;
+}
 body {
   font-family: "Roboto";
   font-size: 16px;
@@ -174,9 +176,9 @@ h4 {
   }
 }
 .grid-item {
-  width: calc((100% / 4) - 30px);
+  width: calc((100% / 4) - 15px);
   @media screen and (max-width: 1023px) {
-    width: calc((100% / 3) - 20px);
+    width: calc((100% / 3) - 15px);
   }
   @media screen and (max-width: 767px) {
     width: calc((100% / 2) - 10px);
