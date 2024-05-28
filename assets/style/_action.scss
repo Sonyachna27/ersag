@@ -166,8 +166,3 @@
     flex-direction: column;
   }
 }
-.action-post-title {
-  & h1 {
-    @include titleH2;
-  }
-}
