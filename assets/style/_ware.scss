@@ -28,6 +28,9 @@
     height: 100%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
+    @media screen and (max-width: 1023px) {
+      min-height: 150px;
+    }
   }
 }
 .ware__item_descr {
