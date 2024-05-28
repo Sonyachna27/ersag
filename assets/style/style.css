@@ -2467,11 +2467,9 @@ h4 span {
   width: 100%;
   padding: 15px;
   border-radius: 15px 15px 0 0;
-  height: 100%;
   aspect-ratio: 1/1;
   flex-grow: 1;
   max-height: 310px;
-  height: 100%;
 }
 .ware__item-img img {
   max-width: 280px;
