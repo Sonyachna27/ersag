@@ -17,18 +17,19 @@
     @media screen and (max-width: 1023px) {
       width: 100%;
     }
-    & img {
-      object-fit: cover;
-    }
+    // & img {
+    //   height: auto;
+    // }
 
     &_right {
       flex-grow: 2;
       width: 60%;
       border-radius: 10px;
-      height: 100%;
+      height: auto;
+      object-fit: cover;
       aspect-ratio: 485 / 480;
       & img {
-        height: 100%;
+        height: auto;
       }
       @media screen and (max-width: 1023px) {
         width: 70%;
@@ -39,10 +40,8 @@
       flex-direction: column;
       gap: 35px;
       justify-content: space-between;
-      @media screen and (max-width: 1023px) {
-        justify-content: none;
-      }
-      //   align-items: center;
+      align-items: center;
+
       flex-grow: 1;
       & .rotating {
         max-width: 150px;
