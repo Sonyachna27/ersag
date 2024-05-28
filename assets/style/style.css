@@ -1753,6 +1753,8 @@ h4 span {
   flex-grow: 1;
   width: 100%;
   transition: 0.3s linear;
+}
+.catalog__item .catalog__item-animation {
   opacity: 0;
 }
 .catalog__item .catalog__item-animation .animated {

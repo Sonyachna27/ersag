@@ -14,8 +14,9 @@
   flex-grow: 1;
   width: 100%;
   transition: 0.3s linear;
-  opacity: 0;
+
   & .catalog__item-animation {
+    opacity: 0;
     & .animated {
       opacity: 1;
     }
