@@ -87,10 +87,6 @@ button {
   src: url(../fonts/Roboto/Roboto-Bold.ttf);
   font-weight: 700;
 }
-* {
-  border: 1px solid red;
-}
-
 body {
   font-family: "Roboto";
   font-size: 16px;
