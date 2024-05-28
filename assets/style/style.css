@@ -914,8 +914,8 @@ h4 span {
     left: 0;
     align-items: flex-start;
     gap: 30px;
-    top: 120px;
-    height: calc(100vh - 100px);
+    top: 105px;
+    height: calc(100vh - 105px);
     overflow: hidden;
     overflow-y: auto;
   }
